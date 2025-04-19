@@ -8,4 +8,7 @@ body {
 .dashboard {
   padding: 20px;
   text-align: center;
+  background-color: white; /* Ajout d'un fond blanc pour le dashboard */
+  border-radius: 10px; /* Arrondir les coins */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ajout d'une ombre subtile */
 }

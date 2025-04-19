@@ -1,57 +1,59 @@
-body {
-  margin: 0;
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f6f9fc;
-}
-
 .dashboard-container {
   display: flex;
   height: 100vh;
 }
 
 .sidebar {
-  width: 220px;
-  background-color: #dfeeff;
+  width: 250px;
+  background-color: #e1f0ff;
+  padding: 20px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px 0;
 }
 
-.sidebar .logo {
-  text-align: center;
-  font-weight: bold;
-  color: #295bb3;
+.logo {
+  width: 350px;
+  margin-bottom: -300px;
+  margin-top: -150px;
+  margin-left: -100px;
 }
 
-.sidebar .logo .icon {
-  font-size: 24px;
-  margin-right: 5px;
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.sidebar nav ul {
-  list-style: none;
-  padding: 0;
-  margin-top: 40px;
-}
-
-.sidebar nav ul li {
-  padding: 12px 20px;
-  color: #333;
+.menu-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
   cursor: pointer;
+  color: #333;
   transition: 0.3s;
-}
-
-.sidebar nav ul li.active,
-.sidebar nav ul li:hover {
-  background-color: #a9dcff;
+  padding: 8px;
   border-radius: 8px;
 }
 
+.menu-item:hover,
+.menu-item.active {
+  background-color: #cce5ff;
+}
+
+.red-dot {
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  margin-left: auto;
+}
+
 .logout {
-  text-align: center;
-  color: red;
-  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #444;
   cursor: pointer;
 }
 
@@ -86,7 +88,7 @@ body {
   display: flex;
   align-items: center;
   gap: 6px;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .cards {
@@ -101,7 +103,7 @@ body {
   border-radius: 10px;
   padding: 20px;
   width: 300px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .card h2 {
@@ -133,29 +135,4 @@ body {
   height: 100%;
   background-color: #1e90ff;
   border-radius: 4px;
-}
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 80px;
-  margin-bottom: 20px;
-}
-
-.logo-img{
-  width: 350px;
-  height: auto;
-  display: block;
-  margin-right: 35px;
-
-}
-.icon {
-  color: black;
-  margin-right: 8px;
-  font-size: 16px;
-  vertical-align: middle;
-}
-.logout {
-  text-decoration: underline;
-  cursor: pointer;
 }
